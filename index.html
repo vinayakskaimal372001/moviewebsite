@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe</title>
+   
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+   
+    <script>
+        AOS.init();
+      </script>
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+   
+</head>
+<body class="bg-black text-white imagess justify-center">
+
+
+
+
+
+
+    <nav class="bg-grey-900">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-around">
+            <div class="flex flex-shrink-0 items-center hidden sm:block">
+                
+              <p class="man text-white text-xl font-bold flex flex-row "> <img height="30px" width="30px" src="./images/Logo123.png" alt="">StreamVibe </p>
+            </div>
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4  px-4 py-2 rounded-lg">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="hi" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Movies & Show</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Support</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Subsciptions</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full p-1 text-white hover:text-white focus:outline focus:ring-2 focus:ring-white focus:ring-offset-3 focus:ring-offset-black">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+              </button>
+      
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                   
+                  </button>
+                </div>
+      
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class=" block sm:hidden " id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
+            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> -->
+          </div>
+        </div>
+      </nav>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Header -->
+    <header class=" text-center flex flex-col py-4  items-center">
+      <img height="500px"  width="500px" class="hidden sm:block shadow-lg drop-shadow-[0_35px_35px_rgba(1,0.5,0,0.9)]"  src="./images/Abstract Design (1).png" alt="">
+        <h1 class="text-4xl whitte hi font-bold drop-shadow-x mt-12">The Best Streaming Experience</h1>
+        <p class="text-lg justify-center fade mt-4">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+        <br>
+       <a href="" class="bg-red-700 py-3 px-3 rounded-lg whitte hover:bg-red-900 "><i class="fa-solid fa-play " style="color: #f0f2f4;"></i> Start Watching Now</a>
+    </header>
+
+    <!-- Services Section -->
+    <section class="max-w-7xl mx-auto px-4 py-6 mt-12 rounded-md sm:px-6 lg:px-8 mb-1.5 main">
+    
+        <h2 class="text-3xl font-semibold whitte  text-center">Explore our wide variety of categories</h2>
+        <p class="text-s pt-4   mb-8 text-center">To make renting easy and hassle-free, we provide a variety of services and advantages. We have you covered with a variety of vehicles and flexible rental terms.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class=" rounded-lg hover:text-black hover:bg-black   shadow-lg p-1 flex items-center flex-col">
+                <img  src="./images/Container1.png" alt="Car 1 " class="rounded-lg h-60 w-90 py-2  hover:ring-8">
+               
+                <img src="./images/Container sub.png" class="py-2" alt="">
+              
+            </div>
+
+            <div class=" rounded-lg hover:text-black hover:bg-black   shadow-lg p-1 flex items-center flex-col">
+              <img  src="./images/Container2.png" alt="Car 1 " class="rounded-lg h-60 w-90  py-2 hover:ring-8">
+             
+              <img src="./images/Container_2.png" class="py-2" alt="">
+            
+          </div>
+
+           <div class=" rounded-lg hover:text-black hover:bg-black   shadow-lg p-1 flex items-center flex-col">
+                <img  src="./images/Container3.png" alt="Car 1 " class="rounded-lg h-60 w-90 py-2  hover:ring-8">
+               
+                <img src="./images/Container_3.png" class="py-2" alt="">
+              
+            </div>
+
+            <div class=" rounded-lg hover:text-black hover:bg-black   shadow-lg p-1 flex items-center flex-col">
+              <img  src="./images/Container4.png" alt="Car 1 " class="rounded-lg h-60 w-90 py-2  hover:ring-8">
+             
+              <img src="./images/Container_4.png" class="py-2" alt="">
+            
+          </div>
+            </section>
+
+
+
+<br>
+<br>
+
+
+
+
+    <section class="max-w-7xl mx-auto px-4 py-4 rounded-md sm:px-6 lg:px-8 main">
+        <h2 class="text-3xl font-semibold whitte mb-8 text-center">We Provide you streaming experience across various devices.</h2>
+        <p class="py-4">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</p>
+        
+        <div  class="grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-red-900">
+                <img src="./images/Card (1).png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+               
+                
+                
+            </div>
+
+            <!-- Card 2 -->
+            <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-red-900">
+              <img src="./images/Card 2.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+             
+              
+             
+          </div>
+
+            <!-- Card 3 -->
+            <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-red-900">
+              <img src="./images/Card 3.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+             
+              
+             
+          </div>
+
+
+          <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-red-900">
+                        <img src="./images/Card 4.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+           
+            
+           
+        </div>
+
+
+        <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-red-900">
+          <img src="./images/Card 5.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+         
+          
+          
+      </div>
+
+      <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-red-900">
+                <img src="./images/Card 6.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col    ">
+       
+        
+        <!-- <button class="but  ring-1 ring-gray-800 mt-4 bg-black-900 hover:bg-white hover:text-black hover:ring-gray-800 text-white py-2 px-4 rounded-full">view</button> -->
+    </div>
+
+
+    
+
+
+
+  
+
+
+
+
+
+
+
+            
+
+
+        </div>
+<!-- <div class="flex justify-center mt-5 items-center"><button class="ring-2 ring-white mt-4 bg-black hover:bg-white hover:text-black hover:ring-gray-500 text-white py-2 px-4 rounded-full">See More</button></div> -->
+
+    </section>
+<br><br>
+
+
+<section class="max-w-7xl mx-auto px-4 py-4 rounded-md sm:px-6 lg:px-8 main">
+  <h2 class="text-3xl font-semibold mb-8 text-center whitte">Choose the plan that's right for you</h2>
+  <p class="py-4">Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+  
+  <div  class="grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-gray-400">
+          <img src="./images/1.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+         <div class="flex flex-row justify-around">
+          <button class="but mb-2    mt-4 bg-black hover:bg-white hover:text-black hover:ring-0 text-white py-2 px-4 rounded-lg">Start Free Plan</button>
+           <button class="but mb-2  mt-4 bg-red-900 hover:bg-white hover:text-black hover:ring-gray-800 text-white py-2 px-4 rounded-lg">Choose Plan</button>
+         </div>
+          
+          
+      </div>
+
+      <!-- Card 2 -->
+        <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-gray-400">
+          <img src="./images/2 (2).png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+         <div class="flex flex-row justify-around">
+           <button class="but mb-2    mt-4 bg-black hover:bg-white hover:text-black hover:ring-0 text-white py-2 px-4 rounded-lg">Start Free Plan</button>
+           <button class="but mb-2  mt-4 bg-red-900 hover:bg-white hover:text-black hover:ring-gray-800 text-white py-2 px-4 rounded-lg">Choose Plan</button>
+         </div>
+        </div>
+
+      <!-- Card 3 -->
+      <div  class=" bg-transparent rounded-lg shadow-lg p-1 hover:bg-gray-400">
+        <img src="./images/33.png" alt="Car 1" class="rounded-t-lg  flex items-center flex-col">
+       <div class="flex flex-row justify-around">
+        <button class="but mb-2    mt-4 bg-black hover:bg-white hover:text-black hover:ring-0 text-white py-2 px-4 rounded-lg">Start Free Plan</button>
+         <button class="but mb-2  mt-4 bg-red-900 hover:bg-white hover:text-black hover:ring-gray-800 text-white py-2 px-4 rounded-lg">Choose Plan</button>
+       </div>
+      </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+  </div>
+<!-- <div class="flex justify-center mt-5 items-center"><button class="ring-2 ring-white mt-4 bg-black hover:bg-white hover:text-black hover:ring-gray-500 text-white py-2 px-4 rounded-full">See More</button></div> -->
+
+</section>
+<br>
+
+
+   
+    <!-- Footer -->
+    <section class="foot  max-w-7xl mx-auto rounded-lg p-4 md:p-8 lg:p-12">
+      
+        <p class="text-3xl text-white font-semibold mb-4 sm:mb-8">Start your free trial today!</p>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+        <p class="text-lg text-white mb-4 sm:mb-8">
+          This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.
+        </p>
+       
+            
+            <div class="flex justify-center">
+              <button class="but mb-2 shadow-lg mt-4 bg-red-900 hover:bg-white hover:text-black hover:ring-gray-800 text-white py-2 px-4 rounded-lg">Subscribe</button>
+            </div>
+        </div>
+    </section>
+   
+    
+    <!-- Footer -->
+   
+   <!-- Footer -->
+   <footer class="bg-black text-white py-8 m-7">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2  gap-5 sm:items-center sm:justify-center md:grid-cols-2 lg:grid-cols-4 
+           gap-2">
+            <div>
+                <h5 class="text-lg font-bold mb-4">Home</h5>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Categories</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Devices</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Pricing</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg font-bold mb-4">Movies</h5>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Genres</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Trending</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">New Release</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Popular</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg font-bold mb-4">Shows</h5>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Genres</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Trending</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">New Release</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline hover:text-white">Popular</a></li>
+                </ul>
+            </div>
+           
+            <div>
+                <h5 class="text-lg font-bold mb-4">Connect With Us</h5>
+                <div class="flex space-x-4">
+                    <a href="#"  ><i  class="fab fa-facebook-f hover:text-white"></i></a>
+                    <a href="#" class="hover:text-gray-400 "><i class="fab fa-twitter hover:text-white"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin-in hover:text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<p class=" p-2  flex justify-center">@2023 streamvib, All Rights Reserved</p>
+</body>
+</html>
